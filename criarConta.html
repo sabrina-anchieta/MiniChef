@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="setinha">
+            <a href="index.html">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 8H1M1 8L8 15M1 8L8 1" stroke="#192C45" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <h1 class="header-text">Crie uma conta</h1>
+    </div>
+    <div class="criar-container">
+        <div class="input">
+            <label for="nome" class="input-titulo">Como você deseja ser chamado(a)?</label>
+            <input class="input-box" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div class="input">
+            <legend class="input-titulo">Você tem alguma alergia alimentar?</legend>
+
+            <div class="input-check">
+                <label class="check-box">Intolerância ou Alergia à Lactose (leite de origem animal)
+                    <input type="checkbox" name="leite">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-box">Intolerância ou Alergia à Glúten
+                    <input type="checkbox" name="gluten">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-box">Alergia a Ovos
+                    <input type="checkbox" name="ovo">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-box">Alergia a Frutos do Mar
+                    <input type="checkbox" name="frutosDoMar">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-box">Alergia a Amendoim
+                    <input type="checkbox" name="amendoim">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="check-box">Alergia a Soja
+                    <input type="checkbox" name="soja">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check-box">Alergia a Frutos Secos <br> (ex.: castanhas, nozes)
+                    <input type="checkbox" name="frutosSecos">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <div class="input">
+            <label for="email" class="input-titulo">Qual é o seu endereço de e-mail?</label>
+            <input class="input-box" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <div class="input">
+            <label for="senha" class="input-titulo">Por último, cadastre uma senha.</label>
+            <input class="input-box" type="password" name="senha" id="senha" placeholder="Digite sua senha">
+        </div>
+    </div>
+
+    <div class="criar-botoes">
+        <button class="botao-azul">
+            Criar Conta
+        </button>
+        <div class="ou-entre-container">
+            <div class="ou-entre">
+                <hr>
+                <p>ou entre com</p>
+                <hr>
+            </div>
+            <div class="botoes-redes">
+                <button type="button" class="botao-rede" id="google">
+                    <div class="google_svg">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.8087 9.7025C17.8087 9.11 17.7562 8.5475 17.6662 8H9.19122V11.3825H14.0437C13.8262 12.4925 13.1887 13.43 12.2437 14.0675V16.3175H15.1387C16.8337 14.75 17.8087 12.44 17.8087 9.7025Z"
+                                fill="#4285F4" />
+                            <path
+                                d="M9.19122 18.5C11.6212 18.5 13.6537 17.69 15.1387 16.3175L12.2437 14.0675C11.4337 14.6075 10.4062 14.9375 9.19122 14.9375C6.84372 14.9375 4.85622 13.355 4.14372 11.2175H1.15872V13.535C2.63622 16.475 5.67372 18.5 9.19122 18.5Z"
+                                fill="#34A853" />
+                            <path
+                                d="M4.14372 11.2175C3.95622 10.6775 3.85872 10.1 3.85872 9.5C3.85872 8.9 3.96372 8.3225 4.14372 7.7825V5.465H1.15872C0.543722 6.68 0.191223 8.045 0.191223 9.5C0.191223 10.955 0.543723 12.32 1.15872 13.535L4.14372 11.2175Z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M9.19122 4.0625C10.5187 4.0625 11.7037 4.52 12.6412 5.4125L15.2062 2.8475C13.6537 1.3925 11.6212 0.5 9.19122 0.5C5.67372 0.5 2.63622 2.525 1.15872 5.465L4.14372 7.7825C4.85622 5.645 6.84372 4.0625 9.19122 4.0625Z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                    <p>Google</p>
+                </button>
+                <button type="button" class="botao-rede" id="facebook">
+                    <div class="facebook_svg">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5 0.509035C4.982 0.509035 0.509094 4.98194 0.509094 10.4999C0.509094 15.4303 4.08107 19.5233 8.77673 20.3399V20.3056H8.77725V13.2563H6.36592V10.4994H8.77725V8.29888C8.77725 5.79491 10.4303 4.29908 12.713 4.29908C13.806 4.29908 14.9786 4.47864 14.9786 4.47864V7.05496H13.6889C12.4481 7.05496 12.2227 7.83618 12.2227 8.62625V10.4994H14.9786L14.4967 13.2563H12.2227V20.3056V20.3399C16.9189 19.5233 20.4909 15.4303 20.4909 10.4999C20.4909 4.98194 16.018 0.509035 10.5 0.509035Z"
+                                fill="#1778F2" />
+                        </svg>
+                    </div>
+                    <p>Facebook</p>
+                </button>
+            </div>
+        </div>
+        <div class="privacidade-text">Ao se cadastrar no MiniChef, você concorda com nossa Política de Uso e
+            Privacidade.</div>
+    </div>
+</body>
+
+</html>

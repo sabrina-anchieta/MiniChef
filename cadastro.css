@@ -1,0 +1,540 @@
+/*aqui a margin:auto deixa o conteúdo centralizado*/
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 375px;
+    min-height: 812px;
+    background: #F2F2F2;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+/*botões, usados para qualquer uma das telas de cadastro*/
+.botao-vermelho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 343px;
+    height: 49px;
+    background: #FF6961;
+    box-shadow: inset 0px -5px 0px #ED5951;
+    border-radius: 10px;
+    border: 0;
+}
+
+.botao-vermelho, .botao-azul  {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2F2F2;
+}
+
+.botao-branco {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 343px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px solid #B1B1B1;
+    box-shadow: inset 0px -3px 0px #B1B1B1;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FF6961;
+}
+
+.botao-branco .link-entrar {
+    color: #FF6961;
+    text-decoration: none;
+}
+
+.link-criar{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.botao-azul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 10px;
+    
+    width: 343px;
+    height: 52px;
+    
+    border: none;
+    background: #60C6CF;
+    box-shadow: inset 0px -5px 0px #23ADBF;
+    border-radius: 10px;
+    }
+
+/*esse é o container onde fica a figura do mascote e as duas caixas de texto embaixo, usado na pag de bem vindo e nas de conclusão de cadastro e criação de senha*/
+.mascote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    width: 343px;
+    height: 354.91px;
+}
+
+.mascote-svg {
+    width: 180px;
+    height: 186.91px;
+}
+
+.mascote-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    flex: none;
+    order: 1;
+    flex-grow: 0
+}
+
+.mascote-titulo h1 {
+    width: 152px;
+    height: 60px;
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+.mascote-texto-1 p {
+    width: 343px;
+    height: 60px;
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+/*cabeçalho das pag de cadastro entrada e troca de senha*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    height: 80px;
+    margin-top: 30px;
+}
+
+.setinha {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 10px;
+    gap: 16px;
+    width: 24px;
+    height: 34px;
+}
+
+.header-text {
+    margin: 0;
+    width: 345px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+/*container da pag bemvindo*/
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px;
+    gap: 76px;
+    margin: 190px 16px 75px;
+    width: 100%;
+    height: 100%;
+}
+
+/*config dos botões da pag bemvindo*/
+.bv-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    height: 114px;
+}
+
+
+/*container da pag entrar*/
+.entrar-container {
+    display: flex;
+    flex-direction: column;
+    height: 812px;
+    justify-content: space-between;
+}
+
+
+/*flexbox dos inputs de login*/
+.login {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 345px;
+    height: 328px;
+    margin-top: 30px;
+}
+
+/*as tags de input configuram as entradas de informação do cliente*/
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 345px;
+    height: auto;
+}
+
+.input-titulo {
+    width: 345px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+
+.input-box, .input-check {
+    box-sizing: border-box;
+    width: 343px;
+    height: auto;
+    border: 1px solid #B1B1B1;
+    background: none;
+    border-radius: 10px;
+    padding: 16px 24px;
+}
+
+/*muda a cor quando clica dentro do input*/
+.input-box:focus {
+    font-family: Poppins;
+    color: #6C6C6C;
+    border: 2px solid #6C6C6C !important;
+    outline: none;
+}
+
+/*muda a cor após preencher input*/
+.input-box,
+select,
+textarea {
+    background-color: #F2F2F2;
+    color: #B1B1B1;
+    font-family: Poppins;
+}
+
+/*muda as cofing do texto dentro do input*/
+.input-box::placeholder {
+    width: 122px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+/*config texto de esqueceu a senha*/
+.esq-senha {
+    margin: 0;
+    width: 100%;
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+.login-botoes {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 345px;
+    height: 231px;
+    margin-bottom: 45px;
+}
+
+/*ou-entre é a seção de entrar pelo google ou face*/
+.ou-entre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    height: auto;
+}
+
+.ou-entre hr {
+    width: 105px;
+}
+
+.ou-entre p {
+    margin: 0;
+    padding: 0;
+    width: 96px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+/*config os botões de entrar pelo google ou face*/
+.botoes-redes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    height: 49px;
+}
+
+.botao-rede {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 16px;
+    width: 163px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px solid #B1B1B1;
+    box-shadow: inset 0px -3px 0px #B1B1B1;
+    border-radius: 10px;
+}
+
+.google_svg {
+    width: 18px;
+    height: 18px;
+}
+
+.facebok_svg {
+    width: 20px;
+    height: 20px;
+}
+
+.botao-rede p {
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+.cadastre-se {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 343px;
+    height: auto;
+}
+
+#text-pink {
+    color: #FF6961;
+    font-weight: 600;
+}
+
+.cadastre-se p {
+    margin: 0;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+.input-check{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.check-box{
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-box input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    margin-top: 3px;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 1.2px solid #B1B1B1;
+    border-radius: 2px;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+  .check-box:hover input ~ .checkmark {
+    border: 2px solid #6C6C6C;
+  }
+
+  .check-box input:checked ~ .checkmark{
+    background-color: #6C6C6C;
+    border-radius: 2px;
+    opacity:1;
+    border: 2px solid #6C6C6C;
+  }
+
+.check-box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check-box .checkmark:after {
+    left: 2px;
+    top: -2px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.input-check label{
+    margin: 0;
+    justify-items: center;
+    height: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+.criar-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 30px;
+gap: 30px;
+}
+
+.ou-entre-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.privacidade-text{
+width: 343px;
+height: 40px;
+font-weight: 400;
+font-size: 13px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #6C6C6C;
+}
+
+.criar-botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 30px auto 45px;
+}
