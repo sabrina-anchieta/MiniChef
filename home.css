@@ -1,16 +1,93 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+  min-height: 812px;
+  background: #F9DFB9;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+
+#divBusca{
+  background-color: #F2F2F2;
+  border:solid 1px;
+  border-radius:15px;
+  width: 345px;
+  height: 50px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+#txtBusca{
+  width: 311px;
+  height: 24px;
+  left: 16px;
+  top: 12px;
+  background-color:transparent;
+  padding-left:5px;
+  font-family: Poppins;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+.btnBusca{
+  width: 311px;
+  height: 24px;
+  left: 16px;
+  top: 12px;
+  flex: auto;
+  float: left;
+}
+
+.btnFiltro{
+  width: 311px;
+  height: 24px;
+  left: 16px;
+  top: 12px;
+  flex: auto;
+  float: right;
+}
+
+
+  .ilhas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 16px 45px;
+  gap: 16px;
+  width: 375px;
+  height: 416px;
+  left: 0px;
+  top: 198px;
+  background: #F2F2F2;
+  box-shadow: 0px 1px 5px #B1B1B1;
+  border-radius: 20px 20px 0px 0px;
+  font-family: Poppins;
   }
   
-  .favoritas, 
-  .recomendacao {
-    position: relative;
-    padding: 15px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
+  .ilhastxt{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 16px;
+  gap: 10px;
+  width: 343px;
+  height: 24px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: Poppins;
+  font-size: 16px;
+}
   
   .gallery-wrapper {
     overflow-x: auto;
@@ -23,12 +100,12 @@
     left: 0;
     right: auto;
     bottom: 0;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 250px;
     width: 40px;
-    color: #fff;
+    color: #FF6961;
     transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
+    background: linear-gradient(to left, transparent 100%, black 200%);
     opacity: 0.1;
     cursor: pointer;
     border: none;
@@ -43,13 +120,20 @@
     right: 0;
     left: auto;
     text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
+    background: linear-gradient(to right, transparent 100%, black 200%);
   }
   
   .gallery {
     display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px;
+    width: 350px;
+    height: 301px;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
   
   .item {
@@ -57,7 +141,7 @@
     height: 250px;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
-    opacity: 0.5;
+    opacity: 0;
   }
   
   .current-item {
