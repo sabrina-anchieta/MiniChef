@@ -1,26 +1,51 @@
-* body {
+body {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 375px;
-  min-height: 812px;
+  height: 812px;
   background: #F9DFB9;
   font-family: Poppins;
   font-style: normal;
 }
-
+.conexao{
+  color: #6C6C6C;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+#profile{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  padding: 5px 10px;
+  gap: 10px;
+  width: 70px;
+  height: 60px;
+  filter: drop-shadow(1px 1px 3px rgba(179, 121, 225, 0.25));
+}
 
 #divBusca{
+  align-items:center;
   background-color: #F2F2F2;
   border:solid 1px;
   border-radius:15px;
-  width: 345px;
-  height: 50px;
+  width: 343px;
+  height: 48px;
+  display: flex;
+  border:none;
+  order: 1;
+  flex-grow: 0;
+  box-shadow: 0px 1px 5px #B1B1B1;
+  border-radius: 10px;
   flex: none;
   order: 1;
   flex-grow: 0;
+  justify-content:space-between;
 }
 
 #txtBusca{
@@ -35,9 +60,11 @@
   border:none;
   height:32px;
   width:260px;
+  float: inline-start;
 }
 
 .btnBusca{
+  padding: 3px;
   width: 311px;
   height: 24px;
   left: 16px;
@@ -47,6 +74,7 @@
 }
 
 .btnFiltro{
+  padding: 3px;
   width: 311px;
   height: 24px;
   left: 16px;
@@ -57,14 +85,13 @@
 
 
   .ilhas {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 16px 45px;
   gap: 16px;
   width: 375px;
-  height: 416px;
+  height: 546px;
   left: 0px;
   top: 198px;
   background: #F2F2F2;
@@ -95,7 +122,7 @@
   
   .arrow-left,
   .arrow-right {
-    position: absolute;
+   position:absolute;
     top: 0;
     left: 0;
     right: auto;
@@ -128,8 +155,8 @@
     flex-direction: column;
     align-items: center;
     padding: 16px 0px;
-    width: 350px;
-    height: 301px;
+    width: 375px;
+    height: 546px;
     border-radius: 10px;
     flex: none;
     order: 1;
@@ -137,14 +164,16 @@
   }
   
   .item {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 450px;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
     opacity: 0;
   }
   
   .current-item {
+    width: 350px;
+    height: 450px;
     opacity: 1;
   }
   
@@ -155,5 +184,3 @@
     -ms-overflow-style: none; 
     scrollbar-width: none; 
   }
-
-  
