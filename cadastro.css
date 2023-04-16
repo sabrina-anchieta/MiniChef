@@ -10,6 +10,46 @@ body {
     background: #F2F2F2;
     font-family: Poppins;
     font-style: normal;
+    color: #192C45;
+    /*cor mais usada, n precisa add dps*/
+}
+
+/*tira a margem automatica dos textos, n precisa mudar dps*/
+p,
+h1, a {
+    margin: 0;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+    gap: 74px;
+    position: relative;
+    width: 375px;
+    height: 68px;
+    background: #F2F2F2;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 56px;
+    height: 36px;
 }
 
 /*botões, usados para qualquer uma das telas de cadastro*/
@@ -27,7 +67,8 @@ body {
     border: 0;
 }
 
-.botao-vermelho, .botao-azul  {
+.botao-vermelho,
+.botao-azul {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -38,7 +79,7 @@ body {
     color: #F2F2F2;
 }
 
-button:active{
+button:active {
     box-shadow: none;
 }
 
@@ -70,27 +111,27 @@ button:active{
     text-decoration: none;
 }
 
-.link-criar{
+.link-criar {
     color: #F2F2F2;
-    text-decoration: none!important;
+    text-decoration: none !important;
 }
 
-.botao-azul{
+.botao-azul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 16px 24px;
     gap: 10px;
-    
+
     width: 343px;
     height: 52px;
-    
+
     border: none;
     background: #60C6CF;
     box-shadow: inset 0px -5px 0px #23ADBF;
     border-radius: 10px;
-    }
+}
 
 /*esse é o container onde fica a figura do mascote e as duas caixas de texto embaixo, usado na pag de bem vindo e nas de conclusão de cadastro e criação de senha*/
 .mascote {
@@ -133,7 +174,6 @@ button:active{
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.01em;
-    color: #192C45;
 }
 
 .mascote-texto-1 p {
@@ -167,10 +207,9 @@ button:active{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 10px;
-    gap: 16px;
+    margin-left: 16px;
     width: 24px;
-    height: 34px;
+    height: 24px;
 }
 
 .header-text {
@@ -181,7 +220,6 @@ button:active{
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0.01em;
-    color: #192C45;
 }
 
 /*container da pag bemvindo*/
@@ -232,7 +270,7 @@ button:active{
 }
 
 /*as tags de input configuram as entradas de informação do cliente*/
-.input{
+.input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -249,11 +287,11 @@ button:active{
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.01em;
-    color: #192C45;
 }
 
 
-.input-box, .input-check {
+.input-box,
+.input-check {
     box-sizing: border-box;
     width: 343px;
     height: auto;
@@ -267,7 +305,7 @@ button:active{
 .input-box:focus {
     font-family: Poppins;
     color: #6C6C6C;
-    border: 2px solid #6C6C6C!important;
+    border: 2px solid #6C6C6C !important;
     outline: none;
 }
 
@@ -426,13 +464,13 @@ textarea {
     color: #6C6C6C;
 }
 
-.input-check{
+.input-check {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.check-box{
+.check-box {
     display: block;
     position: relative;
     padding-left: 25px;
@@ -444,7 +482,7 @@ textarea {
     user-select: none;
 }
 
-.check-box input{
+.check-box input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -463,26 +501,26 @@ textarea {
     background: transparent;
     border: 1.2px solid #B1B1B1;
     border-radius: 2px;
-  }
+}
 
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-  .check-box:hover input ~ .checkmark {
+.check-box:hover input~.checkmark {
     border: 2px solid #6C6C6C;
-  }
+}
 
-  .check-box input:checked ~ .checkmark{
+.check-box input:checked~.checkmark {
     background-color: #6C6C6C;
     border-radius: 2px;
-    opacity:1;
+    opacity: 1;
     border: 2px solid #6C6C6C;
-  }
+}
 
-.check-box input:checked ~ .checkmark:after {
+.check-box input:checked~.checkmark:after {
     display: block;
 }
 
@@ -498,7 +536,7 @@ textarea {
     transform: rotate(45deg);
 }
 
-.input-check label{
+.input-check label {
     margin: 0;
     justify-items: center;
     height: 100%;
@@ -511,38 +549,38 @@ textarea {
     color: #6C6C6C;
 }
 
-.criar-container{
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 30px;
-gap: 30px;
+.criar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
 }
 
-.ou-entre-container{
+.ou-entre-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.privacidade-text{
-width: 343px;
-height: 40px;
-font-weight: 400;
-font-size: 13px;
-line-height: 20px;
-text-align: center;
-letter-spacing: 0.01em;
-color: #6C6C6C;
+.privacidade-text {
+    width: 343px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
 }
 
-.criar-botoes{
+.criar-botoes {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     margin: 30px auto 45px;
-    position:sticky;
+    position: sticky;
 }
 
 .confirm-container {
@@ -555,4 +593,313 @@ color: #6C6C6C;
     margin: 190px 16px 45px;
     width: 100%;
     height: 100%;
+}
+
+/*pag receita*/
+
+.container-receita {
+    display: flex;
+    width: 375px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #F9DFB9;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.header-receita {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    width: 375px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.receita-titulo {
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.img-receita {
+    width: 343px;
+    height: 100px;
+}
+
+.botoes-receita {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 343px;
+    height: 60px;
+}
+
+.botao-receita {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    flex: 1;
+    height: 60px;
+    background: #F2F2F2;
+    border: none;
+    box-shadow: 0px 1px 5px #B1B1B1;
+    border-radius: 10px;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.botao-receita svg {
+    width: 24px;
+    height: 24px;
+    color: #B1B1B1;
+}
+
+.botao-receita p {
+    height: 40px;
+    width: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    ;
+}
+
+.ingredientes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 10px;
+    background: #F2F2F2;
+    box-shadow: 0px 1px 5px #B1B1B1;
+    border-radius: 10px;
+}
+
+.ingredientes-container h1 {
+    width: 310px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.ingredientes-container p {
+    width: 310px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px 0px 0px;
+    gap: 20px;
+    width: 274px;
+    height: 279.72px;
+}
+
+.ingd-check {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 254px;
+    height: 22.34px
+}
+
+.ingd-check label {
+    margin: 0;
+    width: 222px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+.preparo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22.5px;
+    gap: 14px;
+    background: #F2F2F2;
+    box-shadow: 0px 1px 5px #B1B1B1;
+    border-radius: 10px;
+}
+
+.preparo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 3px;
+    width: 90px;
+    height: 60px;
+}
+
+.preparo svg {
+    width: 15px;
+    height: 15px;
+}
+
+.prep-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 90px;
+    height: 42px;
+}
+
+.prep-text h1 {
+    width: 90px;
+    height: 17px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.prep-text p {
+    width: 90px;
+    height: 17px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.passos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.container-row{
+    position: relative;
+    width: 375px;
+    height: 128px;
+}
+
+.svg-container{
+    position: absolute;
+    right: 9.5px;
+    width: 375px;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E2E2E2;
+}
+
+.passos{
+    position: absolute;
+    top:5px;
+    left:49.5px;
+    display: flex;
+    width: 276px;
+    height: 88px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.nmr-bolinha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 32px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 30px 25px;
+    background-color:#E2E2E2;
+    color: #192C45;
+}
+
+.passos-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 10px 2px;
+    gap: 5px;
+}
+
+.passos-texto h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.passos-texto p{
+    text-align: center;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+width: 178px;
+}
+
+.container-row:nth-child(even) .svg-container{
+    transform: scaleX(-1);
+    left: 9.5px;
+}
+
+.container-row:nth-child(even) .passos{
+    flex-direction: row-reverse;
+}
+
+#before-row .svg-container{
+    z-index: 1;
+    color: #60c6cf;
+}
+
+#first-row .nmr-bolinha{
+    color: #F2F2F2;
+    background-color: #192C45;
 }
