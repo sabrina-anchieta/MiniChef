@@ -253,7 +253,7 @@ body {
 
 .fase{
 display: flex;
-width: 375px;
+width: 406px;
 height: 183px;
 left: 0px;
 top: -2px;
@@ -262,18 +262,18 @@ background-color: #C5E6EA;
 
 }
     .selecaococada{
-      width: 375px;
+      width: 406px;
       height: 618px;
       left: 0px;
       top: 146px;
       background: #F9DFB9;
       border-radius: 20px 20px 0px 0px;
+      z-index: 1;
     }
     .selecaotxt{
 
     }
     .receitas{
-
     }
     .blocoreceita{
 display: flex;
@@ -281,14 +281,13 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 padding: 5px 10px;
-gap: 8px;
+gap: ;
 isolation: isolate;
-width: 340px;
+width: 380px;
 height: 71px;
 background: #F2F2F2;
 box-shadow: 0px 1px 5px #B1B1B1;
 border-radius: 10px;
-padding: 5px;
     }
     .imgreceitas{
 width: 61px;
