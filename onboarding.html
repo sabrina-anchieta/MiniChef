@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cards</title>
+</head>
+<body>
+    <main class="wrapper">
+    <div class="header">
+        <div class="setinha">
+            <a href="">
+                <svg style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.908 0C21.144 0 24 2.7252 24 6.792V17.196C24 21.264 21.144 24 16.908 24H7.104C2.856 24 0 21.264 0 17.196V6.792C0 2.7252 2.856 0 7.104 0H16.908ZM12.252 6.864C11.904 6.516 11.328 6.516 10.98 6.864L6.456 11.364C6.12 11.7 6.12 12.3 6.456 12.636L10.98 17.136C11.328 17.484 11.904 17.484 12.252 17.136C12.6 16.776 12.6 16.212 12.252 15.852L9.276 12.9H16.896C17.4 12.9 17.796 12.492 17.796 12C17.796 11.496 17.4 11.1 16.896 11.1H9.276L12.252 8.136C12.42 7.968 12.516 7.728 12.516 7.5C12.516 7.2732 12.42 7.044 12.252 6.864Z" fill="#FF6961"/>
+                    </svg>
+                    
+            </a>
+        </div>
+    </div>
+    <!-- wrapper -->
+
+    <!-- Slides Area -->
+    <section class="slides-area">
+
+      <article class="slide slides-area__slide mascote">
+        <div class="mascote-svg">
+        <img src="imagens/onb1.png" alt="illustration" class="slide__image">
+        </div>
+  
+        <div class="slide__text mascote-texto">
+          <h2 class="mascote-titulo">Encontre novas receitas</h2>
+          <p class="slide__paragraph mascote-texto-1">
+            Agora ficou fácil encontrar novas receitas para cozinhar em família.
+          </p>
+        </div>
+      </article>
+      <article class="slide slides-area__slide mascote">
+        <div class="mascote-svg">
+        <img src="imagens/onb2.png" alt="illustration" class="slide__image">
+        </div>
+        <div class="slide__text mascote-texto">
+          <h2 class="mascote-titulo">Emparelhe sua balança</h2>
+          <p class="slide__paragraph mascote-texto-1">
+            É simples! Emparelhe a balança com o seu celular para conseguir pesar os ingredientes para fazer suas receitas.
+          </p>
+        </div>
+      </article>
+      <article class="slide slides-area__slide mascote">
+        <div class="mascote-svg">
+        <img src="imagens/onb3.png" alt="illustration" class="slide__image">
+        </div>
+        <div class="slide__text mascote-texto">
+          <h2 class="slide__title mascote-titulo">Ajuda dos Pais</h2>
+          <p class="slide__paragraph mascote-texto-1">
+            Algumas receitas usam o forno, quando você precisar peça ajuda para seus pais! 
+          </p>
+        </div>
+      </article>
+      <article class="slide slides-area__slide mascote">
+        <div class="mascote-svg">
+        <img src="imagens/onb4.png" alt="illustration" class="slide__image">
+        </div>
+        <div class="slide__text mascote-texto">
+          <h2 class="slide__title mascote-titulo">E pronto!</h2>
+          <p class="slide__paragraph mascote-texto-1">
+            Agora você já pode cozinhar e aproveitar esse momento em família.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Paginations Area -->
+    <section class="paginations-area"></section>
+    <!-- Next Button -->
+    <div class="botoes-card">
+    <button class="button button-skip botao-branco">Pular</button>
+    <button class="button button-next botao-vermelho" aria-label="to get next slide"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 5L19 12L12 19" stroke="#F2F2F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+    </div>
+</main>
+  <!-- End Wrapper -->
+  <script>
+// Select Body
+const bodyElement = document.body;
+
+// Select Wrapper
+const wrapper = document.querySelector('.wrapper');
+
+// Select Slides Area
+const slidesArea = document.querySelector('.slides-area');
+
+// Set Up Slides-Count
+const slidesCount = slidesArea.childElementCount;
+
+// Set Up Slides-Count-Minus-One
+const slidesCountMinusOne = slidesCount - 1;
+
+// Select Next-Button
+const nextButton = document.querySelector('.button-next');
+
+// Select Paginations Area
+const paginationsArea = document.querySelector('.paginations-area');
+
+// Set Up Slide-Position
+let slidePosition = 0;
+
+// Set Up Move-Value
+let moveValue = 0;
+
+// Set Up Unit 
+let unit = 'px';
+
+// Functions Definition
+let updateWrapperWidth;
+let createPaginationItems;
+
+// When (nextButton) Has (click) Event
+nextButton.addEventListener('click', (event) => {
+  // Call Function
+  moveToNextSlide();
+});
+
+// When Window Has (resize) Event
+window.addEventListener('resize', (event) => {
+  // Call Function
+  updateWrapperWidth(wrapper.offsetWidth);
+});
+
+// Start Animate Function
+function moveToNextSlide() {
+  // If Slide-Position Is Equal To Slides-area Children Count Minus One
+  if(slidePosition == slidesCountMinusOne) {
+    // Call Function
+    getStartedActions();
+  }else { // Else
+    // Increase Slide Position
+    slidePosition++;
+
+    // Add On Move-value The Wrapper Width Value 
+    moveValue += wrapper.offsetWidth;
+  }
+
+  // Move The Slides-Area To Left
+  slidesArea.style.marginLeft = `-${moveValue}${unit}`;
+
+  // Call Functions
+  updateNextButton();
+  createPaginationItems();
+};
+
+// Update Wrapper Width Function
+(updateWrapperWidth = function (width) {
+  // Add Alternate Value For The (width) Param
+  width = width || wrapper.offsetWidth;
+
+  // Update The Slides-Area Width
+  slidesArea.style.width = `${width * slidesCount}${unit}`;
+  
+  // If Slide Position Value Bigger Than 0
+  if(slidePosition > 0) {
+    // Update Move-value
+    moveValue = width;
+
+    // Move The Slides-Area To Left
+    slidesArea.style.marginLeft = `-${width}${unit}`;
+
+    // If Slide-Position Is Equal To Slides-area Children Count Minus One
+    if(slidePosition === slidesCountMinusOne) {
+      // Move The Slides-Area To Left
+      slidesArea.style.marginLeft = `-${width * slidesCountMinusOne}${unit}`;
+    }
+  }
+})();
+
+// Update Next Button Function
+function updateNextButton() {
+  // Add Class (button-next--fade) 
+  nextButton.classList.add('button-next--fade');
+
+  // After 400 milliseconds
+  setTimeout(() => {
+    // Remove Class (button-next--fade)
+    nextButton.classList.remove('button-next--fade');
+  }, 400);
+
+  // After 400 milliseconds
+  setTimeout(() => {
+    // If Slide-Position Is Equal To Slides-area Children Count Minus One
+    if(slidePosition == slidesCountMinusOne) {
+      // Chnage (nextButton) Text Content
+      nextButton.textContent = 'Começar';
+        // Change button style
+      nextButton.classList.add('button-next--last');
+    }else { // Else
+      // Chnage (nextButton) Text Content
+      nextButton.previousSibling;
+    }
+  }, 400);
+};
+
+// Create Pagination Items Function
+(createPaginationItems = function () {
+  // Empty The Paginations-Area Content
+  paginationsArea.innerHTML = '';
+
+  // Loop On All Slides-Area Children Count
+  for (let i = 0; i < slidesCount; i++) {
+    // Create Pagination Item
+    const paginationItem = '<span class="paginations-area__item"></span>';
+
+    // Add Inner The Pagination-Area The Pagination-Item
+    paginationsArea.innerHTML += paginationItem;
+  };
+
+  // Add Class "paginations-area__item--current" In The Active Item
+  paginationsArea.children[slidePosition].classList.add('paginations-area__item--current');
+})();
+
+// Get Started Actions Function
+function getStartedActions() {
+  // Chnage Background-color
+  bodyElement.style.backgroundColor = 'var(--color-dark)';
+
+  // Add Class (wrapper--has-fade)
+  wrapper.classList.add('wrapper--has-fade');
+};
+  </script>
+</body>
+</html>
