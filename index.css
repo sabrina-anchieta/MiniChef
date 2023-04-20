@@ -50,7 +50,6 @@ h2 {
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    text-align: center;
     letter-spacing: 0.01em;
 }
 
@@ -60,7 +59,6 @@ p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.01em;
-    text-align: center;
 }
 
 
@@ -178,6 +176,7 @@ button:active {
     padding: 0px;
     gap: 16px;
     width: 343px;
+    text-align: center;
 }
 
 .mascote-texto-1 {
@@ -794,6 +793,10 @@ color: #6C6C6C;
     height: 600px;
     display: flex;
     flex-direction: column;
+}
+
+.ilhas-text{
+    margin-left: 32px;
 }
 
 /*slider da home*/
