@@ -1,0 +1,99 @@
+body {
+    align-items: flex-start;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto;
+    min-height: 812px;
+    padding: 0px;
+    width: 375px;
+}
+
+/* Barra de navegação superior*/
+.navegacao {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 16px;
+    padding-left: 0 ;
+}
+
+.navegacao_titulo {
+    /* Body / Body - SmBld */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.01em;
+
+    /* Preto Jabuticaba */
+    color: #192C45;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Fonte do titulo */
+.titulo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #192C45;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-right: 0;
+}
+
+/* Fonte do sub-titulo */
+.sub_titulo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-right: 0;
+}
+
+/* Detalhes da linha*/
+.linha {
+    /* Cinza Claro */
+    border: 1px solid #E2E2E2;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.inf_pessoais{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding-left: 16px;
+padding-right: 16px;
+gap: 24px;
+width: 343px;
+height: 64px;
+}

@@ -1,0 +1,198 @@
+/*aqui a margin:auto deixa o conteúdo centralizado*/
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    min-height: 812px;
+    background: #F2F2F2;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+/* Barra de navegação superior*/
+.navegacao {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 16px;
+    padding-left: 0 ;
+}
+
+.navegacao_titulo {
+    /* Body / Body - SmBld */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height, or 150% */
+    letter-spacing: 0.01em;
+
+    /* Preto Jabuticaba */
+    color: #192C45;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/*botões, usados para qualquer uma das telas de cadastro*/
+.botao-vermelho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 343px;
+    height: 49px;
+    background: #FF6961;
+    box-shadow: inset 0px -5px 0px #ED5951;
+    border-radius: 10px;
+    border: 0;
+    padding: 16px 24px;
+    gap: 10px;
+    margin-top: 110%;
+
+}
+
+.botao-vermelho,
+.botao-azul {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2F2F2;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+/*cabeçalho das pag de cadastro entrada e troca de senha*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    height: 80px;
+    margin-top: 30px;
+    position: sticky;
+}
+
+.setinha {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 10px;
+    gap: 16px;
+    width: 24px;
+    height: 34px;
+}
+
+.header-text {
+    margin: 0;
+    width: 345px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+/*flexbox dos inputs de login*/
+.login {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 345px;
+    height: 328px;
+    margin-top: 30px;
+}
+
+/*as tags de input configuram as entradas de informação do cliente*/
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 345px;
+    height: auto;
+}
+
+.input-titulo {
+    width: 345px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #192C45;
+}
+
+.input-box,
+.input-check {
+    box-sizing: border-box;
+    width: 343px;
+    height: auto;
+    border: 1px solid #B1B1B1;
+    background: none;
+    border-radius: 10px;
+    padding: 16px 24px;
+}
+
+/*muda a cor quando clica dentro do input*/
+.input-box:focus {
+    font-family: Poppins;
+    color: #6C6C6C;
+    border: 2px solid #6C6C6C !important;
+    outline: none;
+}
+
+/*muda a cor após preencher input*/
+.input-box,
+select,
+textarea {
+    background-color: #F2F2F2;
+    color: #B1B1B1;
+    font-family: Poppins;
+}
+
+/*muda as cofing do texto dentro do input*/
+.input-box::placeholder {
+    max-width: inherit;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #6C6C6C;
+}
+
+.login-botoes {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 345px;
+    height: 231px;
+    margin-bottom: 45px;
+}

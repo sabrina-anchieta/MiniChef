@@ -6,102 +6,209 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem Vindo(a)</title>
-  <link rel="stylesheet" href="home.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <div class="top">
-    <section class="usuario">
-      Olá, Theo!
-      <img src="imagens/icones.png" id="profile" alt="">
-    </section>
-    <section class="conexao">
-      Balança conectada
-    </section>
-    <div id="divBusca">
-      <img src="imagens/Search.png" id="btnBusca" alt="Buscar">
-      <input type="text" id="txtBusca" placeholder="Procure por receitas">
+  <div class="home-container">
+    <div class="header">
+      <div class="header-top">
+        <div class="header-text">
+          <h1 class="header-title">Olá, Theo!</h1>
+          <div class="header-connect">
+            <div class="connect-text">
+              <p>Balança conectada</p>
+            </div>
+            <div class="connect-circle"></div>
+          </div>
+        </div>
+        <div class="header-img">
+          <img src="imagens/icones.png" alt="icone do blu">
+        </div>
+      </div>
+      <div class="header-search">
+        <div class="search-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.7448 18.7851C19.2087 18.3245 19.9522 18.3245 20.416 18.7851L23.4816 21.2597H23.5348C24.1551 21.8866 24.1551 22.903 23.5348 23.5298C22.9146 24.1567 21.9091 24.1567 21.2889 23.5298L18.7448 20.6142L18.6483 20.5052C18.4685 20.2776 18.3692 19.9938 18.3692 19.6996C18.3692 19.3565 18.5043 19.0274 18.7448 18.7851ZM10.2932 0C13.0231 0 15.6412 1.09612 17.5715 3.04724C19.5019 4.99835 20.5863 7.64462 20.5863 10.4039C20.5863 16.1498 15.9779 20.8078 10.2932 20.8078C4.60841 20.8078 0 16.1498 0 10.4039C0 4.65799 4.60841 0 10.2932 0Z"
+              fill="#FF6961" />
+            <path
+              d="M16.7603 10.3428C16.7603 13.9326 13.8501 16.8428 10.2603 16.8428C6.6704 16.8428 3.76025 13.9326 3.76025 10.3428C3.76025 6.75292 6.6704 3.84277 10.2603 3.84277C13.8501 3.84277 16.7603 6.75292 16.7603 10.3428Z"
+              fill="#F2F2F2" />
+          </svg>
 
-      <img src="imagens/Filter.png" id="btnFiltro" alt="Filtrar">
-    </div>
-  </div>
-  <div class="ilhas">
-    <section class="ilhastxt">
-      Desbrave as ilhas para cozinhar:
-    </section>
-    <button class="arrow-left control" aria-label="Previous image">◀</button>
-    <button class="arrow-right control" aria-label="Next Image">▶</button>
-    <div class="gallery-wrapper">
-      <div class="gallery">
-        <img src="imagens/Praia Cocada.png" alt="" class="item current-item">
-        <img src="imagens/Pico Picolé.png" alt="" class="item">
-        <img src="imagens/Vulcão Chilli.png" alt="" class="item">
+        </div>
+        <input class="input" type="search" name="search-bar" id="home-search" placeholder="Procure por Receitas">
+        <div class="search-icon">
+          <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.931 13.3401C22.211 13.3401 24.0576 15.1557 24.0576 17.3957C24.0576 19.6344 22.211 21.45 19.931 21.45C17.6523 21.45 15.8043 19.6344 15.8043 17.3957C15.8043 15.1557 17.6523 13.3401 19.931 13.3401ZM9.75756 15.6662C10.7562 15.6662 11.5669 16.4626 11.5669 17.4438C11.5669 18.4236 10.7562 19.2214 9.75756 19.2214H1.86694C0.868279 19.2214 0.0576172 18.4236 0.0576172 17.4438C0.0576172 16.4626 0.868279 15.6662 1.86694 15.6662H9.75756ZM4.18426 0.116638C6.46425 0.116638 8.3109 1.93222 8.3109 4.17091C8.3109 6.41091 6.46425 8.22649 4.18426 8.22649C1.90561 8.22649 0.0576172 6.41091 0.0576172 4.17091C0.0576172 1.93222 1.90561 0.116638 4.18426 0.116638ZM22.2496 2.39463C23.247 2.39463 24.0576 3.19107 24.0576 4.17091C24.0576 5.15206 23.247 5.9485 22.2496 5.9485H14.359C13.3603 5.9485 12.5497 5.15206 12.5497 4.17091C12.5497 3.19107 13.3603 2.39463 14.359 2.39463H22.2496Z"
+              fill="#FF6961" />
+          </svg>
+        </div>
       </div>
     </div>
-  </div>
-  <nav class="menu">
-    <div class="home">
+    <section class="bottom-home">
+    <div class="ilhas">
+      <div class="ilhas-text">
+        <h2>
+          Desbrave as ilhas para cozinhar:
+        </h2>
+      </div>
+      <section id="slider">
+        <a href="#" class="control_next">
+          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.8846 8.39956C16.7905 8.30546 16.4349 7.9031 16.1037 7.57212C14.1618 5.49056 9.09604 2.08348 6.44463 1.04351C6.04197 0.876401 5.02395 0.522714 4.48003 0.5C3.95884 0.5 3.46201 0.616814 2.9879 0.853687C2.3969 1.18466 1.9228 1.70546 1.66301 2.32035C1.49578 2.74705 1.236 4.02389 1.236 4.04661C0.976215 5.44351 0.833334 7.71327 0.833334 10.2215C0.833334 12.6114 0.976213 14.7886 1.18891 16.2066C1.21327 16.2294 1.47305 17.8161 1.75718 18.3596C2.27837 19.3525 3.2964 19.969 4.38586 19.969H4.48003C5.18956 19.9447 6.68169 19.3282 6.68169 19.3055C9.19021 18.2639 14.1391 15.0239 16.128 12.8709C16.128 12.8709 16.6882 12.3177 16.9317 11.9721C17.3117 11.4757 17.5 10.8608 17.5 10.2459C17.5 9.55959 17.2873 8.92035 16.8846 8.39956Z"
+              fill="#FF6961" />
+          </svg>
+        </a>
+        <a href="#" class="control_prev">
+          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.11536 8.39956C1.20953 8.30546 1.56511 7.9031 1.89633 7.57212C3.8382 5.49056 8.90396 2.08348 11.5554 1.04351C11.958 0.876401 12.9761 0.522714 13.52 0.5C14.0412 0.5 14.538 0.616814 15.0121 0.853687C15.6031 1.18466 16.0772 1.70546 16.337 2.32035C16.5042 2.74705 16.764 4.02389 16.764 4.04661C17.0238 5.44351 17.1667 7.71327 17.1667 10.2215C17.1667 12.6114 17.0238 14.7886 16.8111 16.2066C16.7867 16.2294 16.527 17.8161 16.2428 18.3596C15.7216 19.3525 14.7036 19.969 13.6141 19.969H13.52C12.8104 19.9447 11.3183 19.3282 11.3183 19.3055C8.80979 18.2639 3.86094 15.0239 1.87198 12.8709C1.87198 12.8709 1.31182 12.3177 1.06827 11.9721C0.688342 11.4757 0.5 10.8608 0.5 10.2459C0.5 9.55959 0.712697 8.92035 1.11536 8.39956Z"
+              fill="#FF6961" />
+          </svg>
+        </a>
+        <ul>
+          <li><img src="imagens/Praia Cocada.png" alt="Nível 1"></li>
+          <li><img src="imagens/Pico Picolé.png" alt="Nível 2"></li>
+          <li><img src="imagens/Vulcão Chilli.png" alt="Nível 3"></li>
+        </ul>
+      </section>
+    </div>
+
+    <!--menu-->
+    <nav class="menu">
+      <div class="home">
         <div class="home-svg">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 9.00006L12 2.00006L21 9.00006V20.0001C21 20.5305 20.7893 21.0392 20.4142 21.4143C20.0391 21.7893 19.5304 22.0001 19 22.0001H5C4.46957 22.0001 3.96086 21.7893 3.58579 21.4143C3.21071 21.0392 3 20.5305 3 20.0001V9.00006Z" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9 22.0001V12.0001H15V22.0001" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3 9.00006L12 2.00006L21 9.00006V20.0001C21 20.5305 20.7893 21.0392 20.4142 21.4143C20.0391 21.7893 19.5304 22.0001 19 22.0001H5C4.46957 22.0001 3.96086 21.7893 3.58579 21.4143C3.21071 21.0392 3 20.5305 3 20.0001V9.00006Z"
+              stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9 22.0001V12.0001H15V22.0001" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
         </div>
         <div class="bolinha">
-        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2"/>
-        </svg>
+          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2" />
+          </svg>
         </div>
-    </div>
-    <div class="calendario">
+      </div>
+      <div class="calendario">
         <div class="home-svg">
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_311_171)">
-            <path d="M20 4.00006H6C4.89543 4.00006 4 4.89549 4 6.00006V20.0001C4 21.1046 4.89543 22.0001 6 22.0001H20C21.1046 22.0001 22 21.1046 22 20.0001V6.00006C22 4.89549 21.1046 4.00006 20 4.00006Z" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M17 2.00006V6.00006" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M9 2.00006V6.00006" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M4 10.0001H22" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path
+                d="M20 4.00006H6C4.89543 4.00006 4 4.89549 4 6.00006V20.0001C4 21.1046 4.89543 22.0001 6 22.0001H20C21.1046 22.0001 22 21.1046 22 20.0001V6.00006C22 4.89549 21.1046 4.00006 20 4.00006Z"
+                stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17 2.00006V6.00006" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M9 2.00006V6.00006" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M4 10.0001H22" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
             </g>
             <defs>
-            <clipPath id="clip0_311_171">
-            <rect width="24" height="24" fill="white" transform="translate(0.666748 6.10352e-05)"/>
-            </clipPath>
+              <clipPath id="clip0_311_171">
+                <rect width="24" height="24" fill="white" transform="translate(0.666748 6.10352e-05)" />
+              </clipPath>
             </defs>
-        </svg>
+          </svg>
         </div>
         <div class="bolinha">
-        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2"/>
-        </svg>
+          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2" />
+          </svg>
         </div>
-    </div>
-    <div class="livro">
+      </div>
+      <div class="livro">
         <div class="home-svg">
-        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.33325 3.00006H8.33325C9.39412 3.00006 10.4115 3.42149 11.1617 4.17163C11.9118 4.92178 12.3333 5.9392 12.3333 7.00006V21.0001C12.3333 20.2044 12.0172 19.4413 11.4546 18.8787C10.892 18.3161 10.1289 18.0001 9.33325 18.0001H2.33325V3.00006Z" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22.3333 3.00006H16.3333C15.2724 3.00006 14.255 3.42149 13.5048 4.17163C12.7547 4.92178 12.3333 5.9392 12.3333 7.00006V21.0001C12.3333 20.2044 12.6493 19.4413 13.2119 18.8787C13.7745 18.3161 14.5376 18.0001 15.3333 18.0001H22.3333V3.00006Z" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.33325 3.00006H8.33325C9.39412 3.00006 10.4115 3.42149 11.1617 4.17163C11.9118 4.92178 12.3333 5.9392 12.3333 7.00006V21.0001C12.3333 20.2044 12.0172 19.4413 11.4546 18.8787C10.892 18.3161 10.1289 18.0001 9.33325 18.0001H2.33325V3.00006Z"
+              stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M22.3333 3.00006H16.3333C15.2724 3.00006 14.255 3.42149 13.5048 4.17163C12.7547 4.92178 12.3333 5.9392 12.3333 7.00006V21.0001C12.3333 20.2044 12.6493 19.4413 13.2119 18.8787C13.7745 18.3161 14.5376 18.0001 15.3333 18.0001H22.3333V3.00006Z"
+              stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
         <div class="bolinha">
-        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2"/>
-        </svg>
+          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2" />
+          </svg>
         </div>
-    </div>
-    <div class="user">
+      </div>
+      <div class="user">
         <div class="home-svg">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 21.0001V19.0001C20 17.9392 19.5786 16.9218 18.8284 16.1716C18.0783 15.4215 17.0609 15.0001 16 15.0001H8C6.93913 15.0001 5.92172 15.4215 5.17157 16.1716C4.42143 16.9218 4 17.9392 4 19.0001V21.0001" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12 11.0001C14.2091 11.0001 16 9.2092 16 7.00006C16 4.79092 14.2091 3.00006 12 3.00006C9.79086 3.00006 8 4.79092 8 7.00006C8 9.2092 9.79086 11.0001 12 11.0001Z" stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 21.0001V19.0001C20 17.9392 19.5786 16.9218 18.8284 16.1716C18.0783 15.4215 17.0609 15.0001 16 15.0001H8C6.93913 15.0001 5.92172 15.4215 5.17157 16.1716C4.42143 16.9218 4 17.9392 4 19.0001V21.0001"
+              stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 11.0001C14.2091 11.0001 16 9.2092 16 7.00006C16 4.79092 14.2091 3.00006 12 3.00006C9.79086 3.00006 8 4.79092 8 7.00006C8 9.2092 9.79086 11.0001 12 11.0001Z"
+              stroke="#6C6C6C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
         </div>
         <div class="bolinha">
-        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2"/>
-        </svg>
+          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="2" cy="2.00006" r="2" fill="#F2F2F2" />
+          </svg>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
+    </section>
+  </div>
+  <script>
+    jQuery(document).ready(function ($) {
 
+      $('#checkbox').change(function () {
+        setInterval(function () {
+          moveRight();
+        }, 3000);
+      });
+
+      var slideCount = $('#slider ul li').length;
+      var slideWidth = $('#slider ul li').width();
+      var slideHeight = $('#slider ul li').height();
+      var sliderUlWidth = slideCount * slideWidth;
+
+      $('#slider').css({ width: slideWidth, height: slideHeight });
+
+      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+      $('#slider ul li:last-child').prependTo('#slider ul');
+
+      function moveLeft() {
+        $('#slider ul').animate({
+          left: + slideWidth
+        }, 200, function () {
+          $('#slider ul li:last-child').prependTo('#slider ul');
+          $('#slider ul').css('left', '');
+        });
+      };
+
+      function moveRight() {
+        $('#slider ul').animate({
+          left: - slideWidth
+        }, 200, function () {
+          $('#slider ul li:first-child').appendTo('#slider ul');
+          $('#slider ul').css('left', '');
+        });
+      };
+
+      $('a.control_prev').click(function () {
+        moveLeft();
+      });
+
+      $('a.control_next').click(function () {
+        moveRight();
+      });
+
+    });
+  </script>
 </body>
-<script src="home.js"></script>
+
+</html>
