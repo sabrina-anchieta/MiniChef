@@ -19,7 +19,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 375px;
     min-height: 812px;
     background: var(--branco);
     font-family: Poppins;
@@ -33,6 +32,7 @@ body {
 p,
 h1,
 h2,
+h3,
 a {
     margin: 0;
 }
@@ -53,6 +53,16 @@ h2 {
     letter-spacing: 0.01em;
 }
 
+/*sub titulo*/
+h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
 /*texto*/
 p {
     font-weight: 400;
@@ -60,7 +70,6 @@ p {
     line-height: 20px;
     letter-spacing: 0.01em;
 }
-
 
 /*menu*/
 .menu {
@@ -207,7 +216,7 @@ button:active {
     height: 24px;
 }
 
-/*container da pag bemvindo*/
+/*BEM VINDO*/
 .index-container {
     display: flex;
     flex-direction: column;
@@ -220,7 +229,7 @@ button:active {
     height: 100%;
 }
 
-/*config dos botões da pag bemvindo*/
+/*botões da pag bemvindo*/
 .bv-botoes {
     display: flex;
     flex-direction: column;
@@ -303,7 +312,7 @@ textarea {
     font-family: Poppins;
 }
 
-/*muda as cofing do texto dentro do input*/
+/*muda o texto dentro do input*/
 .input-box::placeholder {
     max-width: inherit;
     height: 20px;
@@ -316,7 +325,7 @@ textarea {
     color: #6C6C6C;
 }
 
-/*config texto de esqueceu a senha*/
+/*texto de esqueceu a senha*/
 .esq-senha {
     padding-left: 6px;
     text-align: start;
@@ -366,7 +375,7 @@ textarea {
     color: #6C6C6C;
 }
 
-/*config os botões de entrar pelo google ou face*/
+/*botões de entrar pelo google ou face*/
 .botoes-redes {
     display: flex;
     flex-direction: row;
@@ -694,19 +703,34 @@ textarea {
 }
 
 /*HOME*/
-.home-container{
+.home-container {
     background-color: #F9DFB9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 872px;
-    width: 375px;
-    justify-content: space-between;
+    height: 812px;
+    width: 100%;
 }
 
-.bottom-home{
+.bottom-home {
     display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-height: none;
     flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30px;
+    width: 375px;
+    min-height: 600px;
+    border-radius: 30px 30px 0 0;
+    background-color: var(--branco);
+    margin-top: 45px;
+}
+
+.bottom-home::-webkit-scrollbar {
+    display: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .header-connect {
@@ -716,6 +740,14 @@ textarea {
     gap: 8px;
     width: 165px;
     height: 20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    height: 70%;
 }
 
 .header-top {
@@ -730,11 +762,12 @@ textarea {
     height: 60px;
 }
 
-.header-img {
+.header-svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 5px 10px;
     width: 70px;
     height: 60px;
     filter: drop-shadow(1px 1px 3px rgba(179, 121, 225, 0.25));
@@ -761,21 +794,21 @@ textarea {
     border-radius: 10px;
 }
 
-#home-search{
+#home-search {
     width: 231px;
-height: 20px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: 0.01em;
-background: var(--branco);
-border: none;
-color: #6C6C6C;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    background: var(--branco);
+    border: none;
+    color: #6C6C6C;
 }
 
-.search-icon{
+.search-icon {
     width: 24px;
     height: 100%;
     display: flex;
@@ -783,19 +816,17 @@ color: #6C6C6C;
     align-items: center;
 }
 
-.ilhas{
-    display: block;
+.ilhas {
     margin: 0;
     padding: 0;
     border-radius: 30px 30px 0 0;
     background-color: var(--branco);
-    padding: 30px 10px;
-    height: 600px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
 }
 
-.ilhas-text{
+.ilhas-text {
     margin-left: 32px;
 }
 
@@ -806,17 +837,17 @@ color: #6C6C6C;
     overflow: hidden;
     margin: 20px auto 0 auto;
     border-radius: 10px;
-  }
-  
-  #slider ul {
+}
+
+#slider ul {
     position: relative;
     margin: 0;
     padding: 0;
     height: 450px;
     list-style: none;
-  }
-  
-  #slider ul li {
+}
+
+#slider ul li {
     position: relative;
     display: block;
     float: left;
@@ -827,9 +858,10 @@ color: #6C6C6C;
     background: #C5E6EA;
     text-align: center;
     line-height: 300px;
-  }
-  
-  a.control_prev, a.control_next {
+}
+
+a.control_prev,
+a.control_next {
     position: absolute;
     top: 40%;
     z-index: 999;
@@ -840,30 +872,205 @@ color: #6C6C6C;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  a.control_prev:hover, a.control_next:hover {
+}
+
+a.control_prev:hover,
+a.control_next:hover {
     opacity: 1;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
-  }
-  
-  a.control_prev {
+}
+
+a.control_prev {
     border-radius: 0 2px 2px 0;
-  }
-  
-  a.control_next {
+}
+
+a.control_next {
     right: 0;
     border-radius: 2px 0 0 2px;
-  }
-  
-  .slider_option {
+}
+
+.slider_option {
     position: relative;
     margin: 10px auto;
     width: 160px;
     font-size: 18px;
-  }
-  
+}
+
+/*PERFIL - PÁGINA*/
+.receita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 8px;
+
+    width: 249px;
+    height: 136px;
+
+    /* Branco Creme */
+
+    background: #F2F2F2;
+    /* Sombrinha cinza */
+
+    box-shadow: 0px 1px 5px #B1B1B1;
+    border-radius: 10px;
+}
+
+.receita-img {
+    flex: 1;
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.receita-img img {
+    border-radius: 10px;
+}
+
+.receita-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 5px;
+    gap: 2px;
+    width: 100%;
+    height: 54px;
+    margin: 0;
+}
+
+.scroll-receitas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2px 0px;
+    gap: 16px;
+}
+
+.scroll-titulo {
+    margin-left: 16px;
+}
+
+/*carrossel das receitas*/
+#carousel {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none;
+    /* Hide the scrollbar for Mozilla Firefox */
+    margin: 0 auto 0 auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    width: 375px;
+    padding: 2px 16px;
+    height: fit-content;
+}
+
+#carousel::-webkit-scrollbar {
+    display: none;
+    /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch;
+    /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+}
+
+.agendadas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px 0px;
+    gap: 16px;
+    width: 375px;
+}
+
+.receita-agendada{
+    display: flex;
+    align-self: center;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+padding: 8px 8px;
+gap: 8px;
+isolation: isolate;
+
+width: 343px;
+height: fit-content;
+
+/* Branco Creme */
+
+background: #F2F2F2;
+/* Sombrinha cinza */
+
+box-shadow: 0px 1px 5px #B1B1B1;
+border-radius: 10px;
+}
+
+/*CONFIGURAÇÕES - PÁGINA*/
+#config-header {
+    height: 90px;
+}
+
+.config-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10px;
+    width: 92px;
+    height: 90px;
+}
+
+.config-icon svg {
+    margin: 16px;
+}
+
+#config-blub {
+    width: 100px;
+    height: 90px;
+}
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 16px;
+    gap: 30px;
+}
+
+.config {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 343px;
+    height: 40px;
+}
+
+.config-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 4px;
+    width: 263px;
+    height: 40px;
+}
+
+#config-sair {
+    justify-content: flex-start;
+}
+
 /*RECEITA - INGREDIENTES*/
 .container-receita {
     display: flex;
