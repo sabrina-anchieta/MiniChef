@@ -269,6 +269,27 @@ background-color: #C5E6EA;
       background: #F9DFB9;
       border-radius: 20px 20px 0px 0px;
       z-index: 1;
+      color: #192C45;
+    }
+    .selecaopicole{
+      width: 406px;
+      height: 618px;
+      left: 0px;
+      top: 146px;
+      background: #F2F2F2;
+      border-radius: 20px 20px 0px 0px;
+      z-index: 1;
+      color: #192C45;
+    }
+    .selecaochilli{
+      width: 406px;
+      height: 618px;
+      left: 0px;
+      top: 146px;
+      background: #192C45;
+      color: #F2F2F2;
+      border-radius: 20px 20px 0px 0px;
+      z-index: 1;
     }
     .selecaotxt{
 
@@ -281,13 +302,13 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;
 padding: 5px 10px;
-gap: ;
+gap: 16px;
 isolation: isolate;
 width: 380px;
 height: 71px;
 background: #F2F2F2;
 box-shadow: 0px 1px 5px #B1B1B1;
-border-radius: 10px;
+color: #192C45;
     }
     .imgreceitas{
 width: 61px;
