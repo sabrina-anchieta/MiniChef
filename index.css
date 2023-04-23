@@ -626,7 +626,8 @@ textarea {
 .botoes-card {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-self: center;
+    width: 343px;
     margin-bottom: 45px;
 }
 
@@ -990,26 +991,26 @@ a.control_next {
     width: 375px;
 }
 
-.receita-agendada{
+.receita-agendada {
     display: flex;
     align-self: center;
-flex-direction: row;
-justify-content: flex-start;
-align-items: center;
-padding: 8px 8px;
-gap: 8px;
-isolation: isolate;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 8px;
+    gap: 8px;
+    isolation: isolate;
 
-width: 343px;
-height: fit-content;
+    width: 343px;
+    height: fit-content;
 
-/* Branco Creme */
+    /* Branco Creme */
 
-background: #F2F2F2;
-/* Sombrinha cinza */
+    background: #F2F2F2;
+    /* Sombrinha cinza */
 
-box-shadow: 0px 1px 5px #B1B1B1;
-border-radius: 10px;
+    box-shadow: 0px 1px 5px #B1B1B1;
+    border-radius: 10px;
 }
 
 /*CONFIGURAÇÕES - PÁGINA*/
@@ -1337,4 +1338,76 @@ border-radius: 10px;
 #first-row .nmr-bolinha {
     color: #F2F2F2;
     background-color: #192C45;
+}
+
+/*PESAR*/
+.pesar-receita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 46px;
+    width: 350px;
+    height: 528px;
+}
+
+.titulo-peso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 5px;
+    height: 65px;
+}
+
+.titulo-peso h1 {
+    text-transform: uppercase;
+}
+
+.informacao-peso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 16px;
+    text-align: center;
+    height: 126px;
+}
+
+.informacao-peso h1 {
+    color: #FF8888;
+}
+
+.peso-atual {
+    font-size: 32px;
+}
+
+.pesar-ingrediente {
+    width: 245px;
+    height: 245px;
+    position: relative;
+}
+
+.peso-final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    font-weight: 700;
+    font-size: 52px;
+    letter-spacing: 0.01em;
+
+}
+
+.peso-final,
+.rodinha {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
