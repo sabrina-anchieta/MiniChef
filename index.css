@@ -1425,7 +1425,6 @@ a.control_next {
     display: flex;
     justify-content: flex-end;
 }
-<<<<<<< HEAD
 .fofura{
     display: flex;
     position: center;
@@ -1434,6 +1433,7 @@ a.control_next {
     left: 70px;
     top: 439px;
     }
+    
 .blocoestrela{
 display: flex;
 width: 312px;
@@ -1450,65 +1450,3 @@ height: 200px;
 left: 61px;
 top: 48px;
 }
-=======
-
-.ilustracao-receita{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:300px;
-}
-
-/*ILHAS*/
-.ilha-header{
-    height: 180px;
-    width: auto;
-    margin: 0;
-}
-
-.ilha-receitas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-}
-
-.blocoreceita{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 5px;
-    gap: 8px;
-    isolation: isolate;
-    width: 340px;
-    height: 71px;
-    background: #F2F2F2;box-shadow: 0px 1px 5px #B1B1B1;
-    border-radius: 10px;
-}
-
-#picole-container, #cocada-container, #vulcao-container{
-    background-color: #C5E6EA;
-}
-
-#bottom-picole{
-    background-color: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-#bottom-cocada{
-    background-color: #F9DFB9;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-#bottom-vulcao{
-    background-color: #192C45;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
->>>>>>> 781c8facd39e77408524970f8d4f376479cc6ac9
