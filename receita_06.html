@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora de Pesar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header-receita">
+        <div class="setinha">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.908 0C21.144 0 24 2.7252 24 6.792V17.196C24 21.264 21.144 24 16.908 24H7.104C2.856 24 0 21.264 0 17.196V6.792C0 2.7252 2.856 0 7.104 0H16.908ZM12.252 6.864C11.904 6.516 11.328 6.516 10.98 6.864L6.456 11.364C6.12 11.7 6.12 12.3 6.456 12.636L10.98 17.136C11.328 17.484 11.904 17.484 12.252 17.136C12.6 16.776 12.6 16.212 12.252 15.852L9.276 12.9H16.896C17.4 12.9 17.796 12.492 17.796 12C17.796 11.496 17.4 11.1 16.896 11.1H9.276L12.252 8.136C12.42 7.968 12.516 7.728 12.516 7.5C12.516 7.2732 12.42 7.044 12.252 6.864Z" fill="#192C45"/>
+                </svg>
+        </div>
+    </div>
+    <div class="pesar-receita">
+        <div class="titulo-peso">
+            <p>Passo 6</p>
+            <h1>BANANA</h1>
+            <p>Amasse uma banana com o auxílio de um garfo até ficar na consistência de pasta.</p>
+        </div>
+        <div class="pesar-ingrediente">
+            <!--esse svg é o circulo do peso-->
+            <svg class="rodinha" height="200" width="200" viewBox="0 0 20 20">
+                <circle r="10" cx="10" cy="10" fill="#E2E2E2" />
+                <circle r="5" cx="10" cy="10" fill="transparent" stroke="var(--azul-menta)" stroke-width="10"
+                stroke-dasharray="50"
+                    transform="rotate(-90) translate(-20)" />
+                    <!--esse stroke dash array é a parte azul, eu não sei como manipular ela mas ela pode mudar de tamanho se mexer nesse calc(35*60) esse 60 seria o "tamanho" dela-->
+            </svg>
+        </div>
+        <div class="informacao-peso">
+            <h2>Você amassou a banana?</h2>
+            <h1>Perfeito!</h1>
+        </div>
+    </div>
+
+            <!--menu-->
+    <nav class="menu">
+        <a href="home.html">
+        <div class="nav-button" id="home">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.56183 22.528V18.8588C8.56183 17.9221 9.3267 17.1628 10.2702 17.1628H13.7192C14.1723 17.1628 14.6069 17.3415 14.9272 17.6595C15.2476 17.9776 15.4276 18.409 15.4276 18.8588V22.528C15.4247 22.9174 15.5786 23.2919 15.8549 23.5682C16.1313 23.8446 16.5073 24 16.8996 24H19.2527C20.3517 24.0028 21.4066 23.5714 22.1847 22.801C22.9628 22.0305 23.4001 20.9844 23.4001 19.8934V9.44026C23.4001 8.55898 23.0066 7.72304 22.3256 7.15763L14.3209 0.811073C12.9285 -0.301695 10.9334 -0.265767 9.58256 0.896405L1.76051 7.15763C1.04739 7.70637 0.62116 8.54479 0.600098 9.44026V19.8827C0.600098 22.1566 2.45695 24 4.7475 24H7.04684C7.86157 24 8.52369 23.3475 8.52959 22.5387L8.56183 22.528Z" fill="#B1B1B1"/>
+                </svg>   
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="2" cy="2.00003" r="2" fill="#F4F1F4"/>
+                    </svg>
+        </div>                        
+        </a>                 
+        
+        <a href="pesquisa.html">
+        <div class="nav-button" id="search">
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.2448 18.7852C19.7087 18.3245 20.4522 18.3245 20.916 18.7852L23.9816 21.2597H24.0348C24.6551 21.8866 24.6551 22.903 24.0348 23.5299C23.4146 24.1568 22.4091 24.1568 21.7889 23.5299L19.2448 20.6142L19.1483 20.5053C18.9685 20.2776 18.8692 19.9938 18.8692 19.6997C18.8692 19.3565 19.0043 19.0274 19.2448 18.7852ZM10.7932 3.05176e-05C13.5231 3.05176e-05 16.1412 1.09615 18.0715 3.04727C20.0019 4.99838 21.0863 7.64465 21.0863 10.4039C21.0863 16.1499 16.4779 20.8079 10.7932 20.8079C5.10841 20.8079 0.5 16.1499 0.5 10.4039C0.5 4.65802 5.10841 3.05176e-05 10.7932 3.05176e-05Z" fill="#B1B1B1"/>
+                <path d="M17.2603 10.3428C17.2603 13.9327 14.3501 16.8428 10.7603 16.8428C7.1704 16.8428 4.26025 13.9327 4.26025 10.3428C4.26025 6.75295 7.1704 3.8428 10.7603 3.8428C14.3501 3.8428 17.2603 6.75295 17.2603 10.3428Z" fill="#F2F2F2"/>
+                </svg>
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2.00003" r="2" fill="#F4F1F4"/>
+                </svg>
+        </div>
+            </a>
+        <a href="perfil.html">
+        <div class="nav-button" id="perfil">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.9999 15.8087C15.2063 15.8087 19.5999 16.6548 19.5999 19.9188C19.5999 23.184 15.1774 24 9.9999 24C4.79475 24 0.399902 23.154 0.399902 19.89C0.399902 16.6248 4.82236 15.8087 9.9999 15.8087ZM9.9999 3.05176e-05C13.5268 3.05176e-05 16.3527 2.82486 16.3527 6.34929C16.3527 9.87373 13.5268 12.6998 9.9999 12.6998C6.47418 12.6998 3.64712 9.87373 3.64712 6.34929C3.64712 2.82486 6.47418 3.05176e-05 9.9999 3.05176e-05Z" fill="#B1B1B1"/>
+                </svg>
+            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="2" cy="2.00003" r="2" fill="#F4F1F4"/>
+                </svg>
