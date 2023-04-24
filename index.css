@@ -1424,5 +1424,5 @@ a.control_next {
     font-size: 18px;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
