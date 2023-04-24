@@ -1426,7 +1426,6 @@ a.control_next {
     display: flex;
     justify-content: flex-end;
 }
-<<<<<<< HEAD
 .fofura{
     display: flex;
     position: center;
@@ -1451,7 +1450,6 @@ height: 200px;
 left: 61px;
 top: 48px;
 }
-=======
 
 /*ILHAS*/
 .ilha-header{
@@ -1505,4 +1503,3 @@ top: 48px;
     flex-direction: column;
     gap: 16px;
 }
->>>>>>> 781c8facd39e77408524970f8d4f376479cc6ac9
