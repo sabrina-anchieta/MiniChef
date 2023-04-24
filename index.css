@@ -1354,7 +1354,7 @@ a.control_next {
     padding: 0px;
     gap: 46px;
     width: 350px;
-    height: 528px;
+    min-height: 528px;
 }
 
 .titulo-peso {
@@ -1365,7 +1365,6 @@ a.control_next {
     text-align: center;
     padding: 10px;
     gap: 5px;
-    height: 65px;
 }
 
 .titulo-peso h1 {
