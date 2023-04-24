@@ -1425,6 +1425,32 @@ a.control_next {
     display: flex;
     justify-content: flex-end;
 }
+<<<<<<< HEAD
+.fofura{
+    display: flex;
+    position: center;
+    width: 230.87px;
+    height: 175.91px;
+    left: 70px;
+    top: 439px;
+    }
+.blocoestrela{
+display: flex;
+width: 312px;
+height: 561px;
+left: 32px;
+top: 128px;
+background: #F2F2F2;
+border-radius: 10px;
+}
+.estrelas{
+    display: flex;
+    width: 186.85px;
+height: 200px;
+left: 61px;
+top: 48px;
+}
+=======
 
 .ilustracao-receita{
     display: flex;
@@ -1485,3 +1511,4 @@ a.control_next {
     flex-direction: column;
     gap: 16px;
 }
+>>>>>>> 781c8facd39e77408524970f8d4f376479cc6ac9
